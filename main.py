@@ -46,7 +46,7 @@ print(123 + 456)
 
 123.45 
 
-# Boolean
+# Boolean 
 
 True 
 False
