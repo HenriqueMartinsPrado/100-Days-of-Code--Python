@@ -26,7 +26,7 @@ band = city_name + pet_name
 print(band)
 
 # ==================================================================
-#  Day 2
+#  Day 2 
 
 # Data Types
 
