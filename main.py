@@ -56,7 +56,7 @@ False
 
 # Conditions
 
-
+# ex1
 # 🚨 Don't change the code below 👇
 number = int(input("Which number do you want to check? "))
 # 🚨 Don't change the code above 👆
@@ -71,6 +71,8 @@ else:
 
 
 
+
+# ex2
 # 🚨 Don't change the code below 👇
 height = float(input("enter your height in m: "))
 weight = float(input("enter your weight in kg: "))
@@ -78,8 +80,10 @@ weight = float(input("enter your weight in kg: "))
 
 #Write your code below this line 👇
 
-bmi = weight / (height * height)
-# print(f"Your BMI is {bmi}")
+import math
+
+bmi = math.ceil(weight / (height * height))
+#print(f"Your BMI is {bmi}")
 
 if bmi < 18.5:
     print(f"Your BMI is {bmi}, you are underweight.")
@@ -91,3 +95,4 @@ elif bmi >= 30 and bmi < 35:
     print(f"Your BMI is {bmi}, you are obese.")
 else:
     print(f"Your BMI is {bmi}, you are clinically obese.")
+
