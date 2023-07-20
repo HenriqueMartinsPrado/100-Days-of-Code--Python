@@ -274,6 +274,8 @@ else:
 # ex2
 # Import the random module here
 
+# Import the random module here
+
 import random
 
 # Split string method
@@ -283,5 +285,14 @@ names = names_string.split(", ")
 
 #Write your code below this line 👇
 
-random_name = random.choice(names)
-print(f"{random_name} is going to buy the meal today!")
+num_itens = len(names)
+
+# Generate a random numbers between 0 and the last index
+random_choice = random.randint(0, num_itens - 1)
+person = names[random_choice]
+print(f"{person} is going to buy the meal today!")
+
+
+# Using choice
+# random_name = random.choice(names)
+# print(f"{random_name} is going to buy the meal today!")
