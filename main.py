@@ -1,3 +1,5 @@
+"""
+
 # Day 1
 
 # The name of the program to debug is Thonny
@@ -244,3 +246,13 @@ if choice1 == "left":
     print("You get attacked by an angry trout. Game Over.")
 else:
   print("You fell into a hole. Game Over.")
+
+
+
+# ==================================================================
+# Day 4
+
+import random
+import module_teste
+
+print(module_teste.name)
