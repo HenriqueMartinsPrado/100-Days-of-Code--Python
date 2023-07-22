@@ -371,3 +371,11 @@ elif computer_choice == user_choice:
 #So what's going on?
 #Can you debug the code and fix it?
 #Solution: https://repl.it/@appbrewery/rock-paper-scissors-debugged-end
+
+# ==================================================================
+# Day 5
+
+total_height = sum(student_heights)
+number_of_studentes = len(students_heights)
+average_height = round(total_height / number_of_studentes)
+print(average_height)
