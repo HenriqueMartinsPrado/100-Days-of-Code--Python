@@ -375,7 +375,39 @@ elif computer_choice == user_choice:
 # ==================================================================
 # Day 5
 
+# v1
 total_height = sum(student_heights)
 number_of_studentes = len(students_heights)
 average_height = round(total_height / number_of_studentes)
 print(average_height)
+
+# v2
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
+
+
+#Write your code below this row 👇
+
+# count = 0
+# height = 0
+# 
+# for height in student_heights:
+#     height = height + int(student_heights[count])
+#     count += 1
+# print(height/(len(student_heights)-1))
+
+count = 0
+for height in student_heights:
+    count = count + height
+# print(f"The total height value is {count}")
+
+number_of_students = 0
+for student in student_heights:
+    number_of_students += 1
+# print(f"The total number of students is {number_of_students}")
+
+avg = int(count/number_of_students)
+print(avg)
