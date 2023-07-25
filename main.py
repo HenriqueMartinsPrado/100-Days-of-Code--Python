@@ -248,7 +248,6 @@ if choice1 == "left":
 else:
   print("You fell into a hole. Game Over.")
 
-""""
 
 # ==================================================================
 # Day 4
@@ -617,3 +616,10 @@ while not end_of_game:
     if "_" not in display:
         end_of_game = True
         print("You win.")
+""""
+
+# ==================================================================
+# Day 8
+
+def my_function(name):
+  print("Hello {name}")
