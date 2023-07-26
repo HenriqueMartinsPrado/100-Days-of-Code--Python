@@ -768,3 +768,37 @@ for grade in student_scores:
 
 # 🚨 Don't change the code below 👇
 print(student_grades)
+
+
+
+
+
+
+# ex2
+travel_log = [
+{
+  "country": "France",
+  "visits": 12,
+  "cities": ["Paris", "Lille", "Dijon"]
+},
+{
+  "country": "Germany",
+  "visits": 5,
+  "cities": ["Berlin", "Hamburg", "Stuttgart"]
+},
+]
+#🚨 Do NOT change the code above
+
+#TODO: Write the function that will allow new countries
+#to be added to the travel_log. 👇
+
+def add_new_country(country, visits, cities):
+    country_name = input("What country would you like to add? ")
+    visits_times = input("How many times the country were visit? ")
+    cities_names = input("What cities did you visit? ")
+
+    travel_log.append({"country": country_name, "visits": visits_times, "cities": cities_names})
+
+#🚨 Do not change the code below
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
