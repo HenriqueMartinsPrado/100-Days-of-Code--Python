@@ -867,6 +867,11 @@ def is_leap(year):
     return False
 
 def days_in_month(year, month):
+  """
+    This is a Docstring. Here we can describe in details
+    whats this funciont will do. if you call this function below
+    the text you insert here will appers as a hint
+  """
     if month > 12 or month < 1:
       return "Invalid month"
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
