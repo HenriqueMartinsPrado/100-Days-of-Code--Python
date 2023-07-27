@@ -847,3 +847,9 @@ I’ll cover how to use PyCharm in Day 15. That said, you can write your own cle
 https://www.udemy.com/course/100-days-of-code/learn/lecture/19279420#questions/16084076
 
 """
+
+
+
+# ==================================================================
+# Day 10 - Functions with RETURN
+
