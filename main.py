@@ -854,7 +854,6 @@ https://www.udemy.com/course/100-days-of-code/learn/lecture/19279420#questions/1
 # Day 10 - Functions with RETURN
 
 # ex1
-
 def is_leap(year):
   if year % 4 == 0:
     if year % 100 == 0:
@@ -868,6 +867,8 @@ def is_leap(year):
     return False
 
 def days_in_month(year, month):
+    if month > 12 or month < 1:
+      return "Invalid month"
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if (is_leap(year) == True) and (month == 2):
         return 29
