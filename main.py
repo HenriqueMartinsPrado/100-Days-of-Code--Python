@@ -78,4 +78,4 @@ if sum_cards(cards_dealer) > sum_cards(cards_player):
 else:
   print(f"Total value of Dealer Cards: {sum_cards(cards_dealer)}")
   print(f"Total value of Player Cards: {sum_cards(cards_player)}")
-  print(f"You lose $ {bet}!")
+  print(f"You lose $ {bet}!") 
