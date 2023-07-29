@@ -65,7 +65,6 @@ def sum_cards(cards_list):
 def sum_cards_plus(cards_list):
     return int(cards_list[0]) + int(cards_list[1]) + int(cards_list[2])
 
-
 while sum_cards(cards_dealer) == sum_cards(cards_player):
     print(f"Total value of Dealer Cards: {sum_cards(cards_dealer)}")
     print(f"Total value of Player Cards: {sum_cards(cards_player)}")
