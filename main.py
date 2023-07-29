@@ -1002,7 +1002,7 @@ def random_cards(cards):
 cards_dealer = random_cards(cards)
 cards_player = random_cards(cards)
 bet = input("How much are you going to bet? $ ")
-
+ 
 def sum_cards(cards_list):
     return int(cards_list[0]) + int(cards_list[1])
 
