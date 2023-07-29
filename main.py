@@ -55,7 +55,6 @@ cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 def random_cards(cards):
     return random.sample(cards, 2)
 
-
 cards_dealer = random_cards(cards)
 cards_player = random_cards(cards)
 bet = input("How much are you going to bet? $ ")
