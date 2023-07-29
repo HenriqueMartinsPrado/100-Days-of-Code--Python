@@ -62,7 +62,6 @@ bet = input("How much are you going to bet? $ ")
 def sum_cards(cards_list):
     return int(cards_list[0]) + int(cards_list[1])
 
-
 def sum_cards_plus(cards_list):
     return int(cards_list[0]) + int(cards_list[1]) + int(cards_list[2])
 
