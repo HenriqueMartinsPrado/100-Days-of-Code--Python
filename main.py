@@ -18,6 +18,6 @@ def checK_answer(guess, answer):
   if guess > answer:
     print("Too high")
   elif guess < answer:
-    pritn("Too low.")
+    print("Too low.")
   else:
     print("You got it. The answer was {answer}")
