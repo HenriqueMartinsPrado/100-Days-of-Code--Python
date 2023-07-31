@@ -13,13 +13,11 @@ answer = random.randint(1, 100)
 level_opt = {"easy": 5, "hard": 10}
 is_gameover = False
 
-print(level_opt["easy"])
 
-# def check_level(level):
-#   if level in level_opt:
-#     print("Easy")
-    
-  # elif level_opt[level] == level_opt[1]:
-  #   print("Hard")
-  # else:
-  #   print("You type a invalid level. Choose a level 'easy' or 'hard' ")
+def checK_answer(guess, answer):
+  if guess > answer:
+    print("Too high")
+  elif guess < answer:
+    pritn("Too low.")
+  else:
+    print("You got it. The answer was {answer}")
