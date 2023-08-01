@@ -2,16 +2,8 @@
 from art import logo
 import random
 
-print(logo)
-print("Welcome to the Number Guessing Game!")
-print("I'm thinking of a the number between 1 and 100.")
-answer = random.randint(1, 100)
-
-# level_opt = {"easy": 5, "hard": 10}
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
-
-# is_gameover = False
 
 def set_diffilculty():
   level = input("Choose a diffilculty. Type 'easy' or 'hard': ")
@@ -29,8 +21,16 @@ def checK_answer(guess, answer):
   else:
     print(f"You got it. The answer was {answer}")
 
-guess = int(input("Make a guess: "))
-turns = set_diffilculty()
-print(f"You have {turns} attempts remaining to guess the number.")
-
-checK_answer(guess, answer)
+def game():
+  print(logo)
+  print("Welcome to the Number Guessing Game!")
+  print("I'm thinking of a the number between 1 and 100.")
+  answer = random.randint(1, 100)
+  
+  turns = set_diffilculty()
+  print(f"You have {turns} attempts remaining to guess the number.")
+  
+  guess = 0
+  while guess != answer:
+    guess = int(input("Make a guess: "))
+    checK_answer(guess, answer)
