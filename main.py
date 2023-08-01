@@ -30,5 +30,7 @@ def checK_answer(guess, answer):
     print(f"You got it. The answer was {answer}")
 
 guess = int(input("Make a guess: "))
-turns = 0
-print(f"You have {} attempts remaining to guess the number.")
+turns = set_diffilculty()
+print(f"You have {turns} attempts remaining to guess the number.")
+
+checK_answer(guess, answer)
