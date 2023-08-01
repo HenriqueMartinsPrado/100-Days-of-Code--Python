@@ -38,5 +38,11 @@ def game():
     print(f"You have {turns} attempts remaining to guess the number.")
     guess = int(input("Make a guess: "))
     turns = checK_answer(guess, answer, turns)
-
+    
+    if turns == 0:
+      print("You've run out of guesses, you lose.")
+      return
+    elif guess != answer:
+      print("Guess again.")
+      
 game()
