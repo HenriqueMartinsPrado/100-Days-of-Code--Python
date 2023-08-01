@@ -38,3 +38,5 @@ def game():
     print(f"You have {turns} attempts remaining to guess the number.")
     guess = int(input("Make a guess: "))
     turns = checK_answer(guess, answer, turns)
+
+game()
