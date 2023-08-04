@@ -1313,4 +1313,4 @@ if int(game_data.data[x]["follower_count"]) > int(game_data.data[y]["follower_co
   if choice == "A":
     pontuation = pontuation + 1
 
-print(pontuation)
+print(pontuation) 
