@@ -28,5 +28,12 @@ print("Against B:", game_data.data[y]["name"], ", a", game_data.data[y]["descrip
 
 choice = input("Who has more followers? Type A or B \n")
 
-print("A: ", game_data.data[x]["follower_count"])
-print("B: ", game_data.data[y]["follower_count"])
+pontuation = 0
+if int(game_data.data[x]["follower_count"]) > int(game_data.data[y]["follower_count"]):
+  if choice == "A":
+    pontuation = pontuation + 1
+
+print(pontuation)
+ 
+# print("A: ", game_data.data[x]["follower_count"])
+# print("B: ", game_data.data[y]["follower_count"])
